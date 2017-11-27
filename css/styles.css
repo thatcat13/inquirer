@@ -1,6 +1,7 @@
 body {
   background: #e4e4e4 url("../img/bg.png");
   position: relative;
+  margin: 0;
 }
 .main {
   background: url("../img/header.png") repeat-x;
@@ -19,13 +20,17 @@ body {
 #dudes {
   position: absolute;
   top: 2.3em;
+  height: 14em;
+  width: 14em;
   left: 3em;
 }
 
 #logo {
   position: absolute;
-  top: 9.6em;
-  left: 7.5em;
+  top: 8.6em;
+  width: 8em;
+  height: 3em;
+  left: 6.5em;
 }
 
 .nav {
@@ -35,28 +40,34 @@ body {
   position: relative;
 }
 
+ul.nav {
+  border-top: 1px solid #888583;
+
+}
+
 ul {
   list-style: none;
 }
 
 ul a {
+  transition: 0.2s color linear;
   text-decoration: none;
+  color: #890101;
+}
+
+ul a:hover {
+  color: #DF3030;
 }
 
 ul li {
   padding: 0.75em;
+  position: relative;
+  right: 1em;
 }
 
 .intro {
   float: right;
-  width: 60%;
-  position: relative;
-}
-
-.main {
-  float: right;
-  overflow: auto;
-  width: 60%;
+  width: 64em;
   position: relative;
 }
 
@@ -65,11 +76,52 @@ ol {
 }
 
 ol a {
+  transition: 0.2s color linear;
   text-decoration: none;
+  color: #890101;
 }
 
+ol a:hover {
+
+  color: #DF3030;
+}
+ img {
+   width: 100%;
+   height: 100%
+ }
 .figure {
   float: left;
-  width: 28%;
+  width: 14em;
   margin: 1.5em;
+}
+
+.photos {
+  float: right;
+  width: 64em;
+}
+
+.figure img {
+    border-radius: 8px;
+    box-shadow: 0px 3px 7px 1px #0000004d;
+}
+
+p {
+  width: 48em;
+  left: 4em;
+  position: relative;
+}
+
+h3 {
+  position: relative;
+  left: 20em;
+}
+
+h2 {
+  position: relative;
+  left: 11em;
+}
+
+.footer {
+  list-style: none;
+  text-decoration: none;
 }
