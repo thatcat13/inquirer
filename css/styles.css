@@ -1,3 +1,51 @@
 body {
-  background-image: url("../img/bg.png");
+  background: #e4e4e4 url("../img/bg.png");
+  position: relative;
+}
+.header {
+  background: url("../img/header.png") repeat-x;
+  position: relative;
+  display: list-item;
+}
+ .container {
+  position: absolute;
+ }
+
+#col-1 {
+ text-align: center;
+ width: 35%;
+ float: left;
+
+}
+
+#dudes {
+  position: absolute;
+  margin-top: 2.333333333em;
+  display: inline-block;
+  margin-left: 3em;
+}
+
+#logo {
+  position: absolute;
+  top: 9.6em;
+  left: 7.5em;
+}
+
+.nav {
+  width: 64%;
+  margin: 21em auto 0;
+  margin-left: 7em;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+ul li {
+  padding: 0.75em;
 }
