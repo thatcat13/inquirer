@@ -2,27 +2,24 @@ body {
   background: #e4e4e4 url("../img/bg.png");
   position: relative;
 }
-.header {
+.main {
   background: url("../img/header.png") repeat-x;
   position: relative;
   display: list-item;
 }
  .container {
-  position: absolute;
+  width: 35%;
  }
 
 #col-1 {
- text-align: center;
- width: 35%;
  float: left;
-
+ position: relative;
 }
 
 #dudes {
   position: absolute;
-  margin-top: 2.333333333em;
-  display: inline-block;
-  margin-left: 3em;
+  top: 2.3em;
+  left: 3em;
 }
 
 #logo {
@@ -32,10 +29,10 @@ body {
 }
 
 .nav {
-  width: 64%;
+  width: 30%;
   margin: 21em auto 0;
   margin-left: 7em;
-  position: absolute;
+  position: relative;
 }
 
 ul {
@@ -48,4 +45,31 @@ ul a {
 
 ul li {
   padding: 0.75em;
+}
+
+.intro {
+  float: right;
+  width: 60%;
+  position: relative;
+}
+
+.main {
+  float: right;
+  overflow: auto;
+  width: 60%;
+  position: relative;
+}
+
+ol {
+  list-style: none;
+}
+
+ol a {
+  text-decoration: none;
+}
+
+.figure {
+  float: left;
+  width: 28%;
+  margin: 1.5em;
 }
