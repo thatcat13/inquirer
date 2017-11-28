@@ -1,4 +1,4 @@
-.section::after, nav::after {
+.section:after, nav:after {
   content: "";
   display: block;
   height: 0;
@@ -7,7 +7,7 @@
 }
 
 
-html,body,div,img,h1,h2,h3,p,a,abbr,em,font,b,u,i,ol,ul,li, {
+html, body, div, img, h1, h2, h3, p, a, abbr, em, font, b, u, i, ol, ul, li {
   margin:0;
   padding:0;
   border:0;
@@ -24,7 +24,7 @@ body {
   text-shadow: 0 1px white;
 }
 
-ol,ul {
+ol, ul {
   list-style:none;
 }
 
@@ -56,6 +56,7 @@ img {
   float: left;
   width: 32%;
 }
+
 h1 {
   background: url("../img/logo-bg.png") no-repeat 50% 0;
 }
@@ -67,7 +68,7 @@ h1 a {
   text-align: center;
 }
 
-.intro,.photo,.footer {
+.intro, .photos, .footer {
   float: right;
   width: 66%;
 }
@@ -110,19 +111,19 @@ h1 a {
 }
 
 .intro h2 {
+  font: normal 2em "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
   text-align: center;
   margin-bottom: .25em;
 }
 
 .photos h2 {
-  /*background: url("../img/ornament.png") no-repeat 0 50%;*/
   font-size: 1.4em;
-  text-transform: lowercase;
   text-align: center;
   margin: .75em 0 1em;
 }
 .photos h2 b {
   background: url("../img/bg.png");
+  font-weight: normal;
   padding: 0 1em;
 }
 
@@ -132,7 +133,7 @@ h1 a {
   line-height: 1.1;
   margin: 0 3.3% 1.5em 0;
   text-align: center;
-  width: 32%;
+  width: 31%;
   text-transform: uppercase;
   letter-spacing: .05em;
 }
@@ -147,10 +148,10 @@ h1 a {
   border-radius: 4px;
   display: block;
   margin: 0 auto 1em;
-  box-shadow: 0 2px 4px black .5;
+  box-shadow: 0 2px 4px 1px #00000070;
 }
 
-#f-mycroft,#f-winter {
+#f-mycroft, #f-winter {
   margin-right: 0;
 }
 
@@ -165,6 +166,130 @@ h1 a {
   margin-bottom: .5em;
 }
 
+/*media queries section*/
+
 @media (max-width: 600px) {
 
+  .container {
+    position: relative;
+  }
+
+ #col-1, .intro, .photos, .footer {
+   float: none;
+   width: auto;
+ }
+
+ h1 {
+   background: none;
+ }
+
+ h1 a {
+   padding-top: 70px;
+   height: 87px;
+ }
+
+ .nav {
+   margin: 0 auto;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   border-top: none;
+ }
+
+ .nav li {
+   float: left;
+   margin-right: 3.3%;
+   width: 31%;
+ }
+
+ .nav a, .nav i {
+   font: 10px Helvetica, Arial, sans-serif;
+   letter-spacing: 0;
+ }
+
+ .nav a:hover, .nav a:focus {
+   background-position: 0 100%;
+ }
+
+ .first a {
+   border-top: none;
+   padding-top: 1em;
+ }
+
+ .nav li.last  {
+   margin-right: 0;
+ }
+
+ .nav li.last {
+   margin-right: 0;
+ }
+
+ .intro {
+   margin-top: 0;
+ }
+
+ .intro h2 {
+   font-size: 1.4em;
+ }
+
+}
+
+@media (max-width: 400px) {
+  .figure, #f-mycroft {
+    margin-right: 3.3%;
+    width: 48%;
+  }
+
+  #f-watson, #f-moriarty {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+ #col-1 {
+   float: none;
+   width: auto;
+ }
+
+ h1 {
+   float: left;
+   width: 32%;
+ }
+
+ .nav {
+   float: right;
+   margin: 40px 0 1em;
+   text-align: center;
+   width: 65%;
+   border-top: none;
+ }
+
+ .nav li.first a {
+   border-top: none;
+   padding-top: 1em;
+ }
+ .nav li {
+   float: left;
+   margin-right: 3.3%;
+   width: 31%;
+ }
+ .nav li.last  {
+   margin-right: 0;
+ }
+
+ .intro {
+   margin-top: 1em;
+ }
+
+ .figure, #f-mycroft {
+   margin-right: 3.3%;
+   width: 13%;
+ }
+
+ .footer {
+   clear: both;
+   float: none;
+   margin-left: 57%;
+   width: 20.5%;
+ }
 }
